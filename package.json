@@ -1,0 +1,16 @@
+{
+  "name": "server_rest_api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Sebastian Gubiec",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-router": "^0.0.1",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
