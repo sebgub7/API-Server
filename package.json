@@ -8,6 +8,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-router": "^0.0.1",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
     "uuid": "^8.3.2"
   },
   "scripts": {
