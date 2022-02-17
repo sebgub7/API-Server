@@ -28,7 +28,7 @@ app.use((req, res) => {
 });
 
 mongoose.connect(
-  'mongodb+srv://sebgub7:<password>@cluster0.nzkum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  'mongodb+srv://AtlasAdmin:9876543210@cluster0.nzkum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -42,7 +42,7 @@ db.once('open', () => {
 });
 db.on('error', (err) => console.log('Error' + err));
 
-const server = app.listen(process.env.PORT || 8000, () => {
+const server = app.listen(process.env.PORT || 8001, () => {
   console.log('Server is running');
 });
 
