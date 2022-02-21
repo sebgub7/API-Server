@@ -10,9 +10,12 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-router": "^0.0.1",
+    "helmet": "^5.0.2",
     "mocha": "^9.2.1",
+    "mongo-sanitize": "^1.1.0",
     "mongoose": "^6.1.7",
     "onchange": "^7.1.0",
+    "snyk": "^1.855.0",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
     "uuid": "^8.3.2"
@@ -21,6 +24,6 @@
     "nodemon": "nodemon server.js",
     "build": "cd client && npm install && npm run build",
     "test": "set NODE_ENV=test&& mocha \"./{,!(node_modules|client)/**/}*.test.js\"",
-      "test:watch": "onchange \"./**/*.js\" -i -k -- npm run test"
+    "test:watch": "onchange \"./**/*.js\" -i -k -- npm run test"
   }
 }

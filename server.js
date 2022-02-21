@@ -4,6 +4,7 @@ const app = express();
 const socket = require('socket.io');
 const path = require('path');
 const mongoose = require('mongoose');
+const helmet = require('helmet');
 const testimonialsRoutes = require('./routes/testimonials.routes');
 const concertsRoutes = require('./routes/concerts.routes');
 const seatsRoutes = require('./routes/seats.routes');
@@ -26,6 +27,7 @@ app.get('*', (req, res) => {
 app.use((req, res) => {
   res.status(404).json({ message: '404 not found...' });
 });
+app.use(helmet());
 
 mongoose.connect(
   'mongodb+srv://AtlasAdmin:9876543210@cluster0.nzkum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
